@@ -11,12 +11,20 @@ const selecoes =[
     {id:4, selecao: 'Camarões', grupo: 'G'},
 ]
 
+function buscarSelecaoPorId(id){
+    return selecoes.filter(selecao => selecao.id == id)
+}
+
 app.get('/', (req, res) => { 
     res.send('Olá Mundo!')
 })
 
 app.get('/selecoes', (req, res) =>{
     res.status(200).send(selecoes)
+})
+
+app.get('/selecoes/:id', (req, res) => {
+    res.json(buscarSelecaoPorId(req.params.id))
 })
 
 app.post('/selecoes', (req, res) => {
