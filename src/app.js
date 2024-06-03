@@ -15,6 +15,10 @@ function buscarSelecaoPorId(id){
     return selecoes.filter(selecao => selecao.id == id)
 }
 
+function buscarIndexSelecao(id){
+    return selecoes.findIndex(selecao => selecao.id == id)
+}
+
 app.get('/', (req, res) => { 
     res.send('Olá Mundo!')
 })
