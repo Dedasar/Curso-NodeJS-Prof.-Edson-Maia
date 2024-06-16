@@ -1,6 +1,6 @@
 # API REST com Node.js
 
-Este repositório contém uma API REST desenvolvida como parte do curso Node.js e API REST.
+Este repositório contém uma API REST desenvolvida como parte do curso Node.js do Prof. Edson Maia.
 
 ## Descrição
 
